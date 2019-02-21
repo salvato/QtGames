@@ -4,16 +4,17 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 
-INCLUDEPATH += ../external/glfw-3.1.2/include/
-INCLUDEPATH += ../external/glm-0.9.9.3/
-INCLUDEPATH += ../external/glew-1.13.0/include
-INCLUDEPATH += ../external/stb/
+INCLUDEPATH += ../Headers
+INCLUDEPATH += ../../external/glfw-3.1.2/include/
+INCLUDEPATH += ../../external/glm-0.9.9.3/
+INCLUDEPATH += ../../external/glew-1.13.0/include
+INCLUDEPATH += ../../external/stb/
 INCLUDEPATH += /usr/include/bullet
 
 
 LIBS += -L/usr/lib
-LIBS += -L../build/external
-LIBS += -L../build/external/glfw-3.1.2/src
+LIBS += -L../../build/external
+LIBS += -L../../build/external/glfw-3.1.2/src
 
 
 LIBS += -lglfw3
