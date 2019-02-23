@@ -1,6 +1,6 @@
 # How to Use Qt Creator for C/C++ Game Programming (Work in progress NOT YET READY !)
 
-These instructions are for x86_64 Linux (I use **Ubuntu** but on other distribution should work too).
+These instructions are for *x86_64 Linux* (I use **Ubuntu** but on other distribution should work too).
 If anyone is interested I can later details how to use *Qt Creator* also on the **Raspberry Pi**.
 
 As usual, we have to fight a little with the first setup phase but after that we will have a very
@@ -10,7 +10,7 @@ friendly development environment that can offer many useful supports to the prog
 
 From the *Qt* site (http://www.qt.io/download) download an up to date version of *Qt* (version 5.12 at the date I’m writing).
 
-You can choose between a free, open source version or a commercial one (in case you plan to distribute your work). I’ll go with the Open Source one (I’m only learning !).
+You can choose between a free, open source version or a commercial one (in case you plan to distribute your work). I’ll go with the *Open Source* one (I’m only learning!).
 
 You will download a file whose name will resemble *“qt-unified-linux-x64-3.0.6-online.run”*. Open a terminal on the containing directory and made it executable by issuing the following command:
 
@@ -27,7 +27,9 @@ If you don’t find the *qtcreator* application simply click on the **insert ima
 **Now for the tricky part…**
 
 The very first time you run *qtcreator* you **could** have to specify which tools (in *qtcreator* terms they are called *Kits*) you would like to use as C, C++ compiler and as debugger. Don’t worry if you fail at first: you can ever amend your configuration without problems.
-In the menu bar, select *Tools→Options...* A Dialog will appear allowing to set a lot of different options. The one we are interested in is the Kits one.
+
+
+In the menu bar, select *Tools→Options...* A Dialog will appear allowing to set a lot of different options. The one we are interested in is the *Kits* one.
 
 **insert image**
 
@@ -67,16 +69,17 @@ Now that we are sure that our *Qt Creator* is able to find all the tools needed 
 
 **The libraries**
 
-We will need some libraries to easy our work. Some libraries are the same suggested in the book as there are versions for both the Arm architecture and the x86-64 one, others are different but don’t be afraid since it is simple to get and install them. The required libraries are:
+We will need some libraries to easy our work. Some libraries are the same suggested in the book as there are versions for both the *Arm* architecture and the *x86-64* one, others are different but don’t be afraid since it is simple to get and install them. The required libraries are:
+
 - `glfw`
 - `glm`
 - `glew`
 - `stb` 
 - `bullet`
 
-Please refer to the *Brian’s* book for the library installation. My suggestion is to have a sub‑folder (which I call `external`) of my main folder in which to place all the required libraries. This can made easier the finding of the headers and lib files.
+Please refer to the *Brian’s* book for the library installation. My suggestion is to have a sub‑folder (which I call `external`) of my main folder in which to place all the required libraries. This can made easier the finding of the headers and *lib* files.
 
-Regarding the `glfw` library you can download the Linux sources from:
+Regarding the `glfw` library you can download the *Linux* sources from:
 
 https://www.glfw.org/download.html
 
@@ -112,6 +115,7 @@ TEMPLATE = app
 CONFIG += console c++14
 CONFIG -= app_bundle
 CONFIG -= qt
+
 \# Here we define the paths the compiler look for the include files
 \# You have to change the paths accordingly to your system configuration !
 INCLUDEPATH += ./Headers
@@ -120,6 +124,7 @@ INCLUDEPATH += ../external/glm-0.9.9.3/
 INCLUDEPATH += ../external/glew-1.13.0/include
 INCLUDEPATH += ../external/stb/
 INCLUDEPATH += /usr/include/bullet
+
 \# Here are specified the paths the linker look for the library files.
 \# You have to change the paths accordingly to your system configuration !
 LIBS += -L/usr/lib
