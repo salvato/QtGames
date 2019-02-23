@@ -22,7 +22,7 @@ Then you may execute, as *superuser*, the program and install *Qt*. The command 
 
 The installation requires an internet connection and takes some time to complete. Once your fresh copy of *Qt* is installed you can start *Qt Creator* and create your first project.
 
-If you don’t find the *qtcreator* application simply click on the **insert image** button and search for it. 
+If you don’t find the *qtcreator* application simply click on the ![Dash button](images/DashButton.jpg) button and search for it. 
 
 **Now for the tricky part…**
 
@@ -31,7 +31,7 @@ The very first time you run *qtcreator* you **could** have to specify which tool
 
 In the menu bar, select *Tools→Options...* A Dialog will appear allowing to set a lot of different options. The one we are interested in is the *Kits* one.
 
-**insert image**
+ ![Kits Dialog 01](images/Fig_001.jpg)
 
 In the image above you will see some kits already installed but chances are that no kit is defined in your fresh installation. If this is the case, click *Add* to add one.
 
@@ -59,7 +59,7 @@ Clicking *Next* will shows the last Dialog allowing to choose a *“Source Versi
 
 Now you will enter the developing environment with a skeleton of your first application.
 
-Just to be sure of having the system up and running click on the **insert image** button and run the program.
+Just to be sure of having the system up and running click on the ![Dash button](images/DashButton.jpg) button and run the program.
 
 A terminal will open and your first *Hello World* should appear:
 
