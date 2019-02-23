@@ -22,11 +22,11 @@ Then you may execute, as *superuser*, the program and install *Qt*. The command 
 
 The installation requires an internet connection and takes some time to complete. Once your fresh copy of *Qt* is installed you can start *Qt Creator* and create your first project.
 
-If you don’t find the qtcreator application simply click on the  button and search for it. 
+If you don’t find the *qtcreator* application simply click on the **insert image** button and search for it. 
 
 **Now for the tricky part…**
 
-The very first time you run qtcreator you **could** have to specify which tools (in qtcreator terms they are called Kits) you would like to use as C, C++ compiler and as debugger. Don’t worry if you fail at first: you can ever amend your configuration without problems. 
+The very first time you run *qtcreator* you **could** have to specify which tools (in *qtcreator* terms they are called *Kits*) you would like to use as C, C++ compiler and as debugger. Don’t worry if you fail at first: you can ever amend your configuration without problems.
 In the menu bar, select *Tools→Options...* A Dialog will appear allowing to set a lot of different options. The one we are interested in is the Kits one.
 
 **insert image**
@@ -49,7 +49,7 @@ Click *Next* and leave *qmake* as the *Build system* as shown in the next dialog
 
 **insert image**
 
-Another dialog will appear allowing to choose the Kit (or Kits) to use for building your project. Choose the one you have set in the setup phase:
+Another dialog will appear allowing to choose the *Kit* (or *Kits*) to use for building your project. Choose the one you have set in the setup phase:
 
 **insert image**
 
@@ -68,11 +68,11 @@ Now that we are sure that our *Qt Creator* is able to find all the tools needed 
 **The libraries**
 
 We will need some libraries to easy our work. Some libraries are the same suggested in the book as there are versions for both the Arm architecture and the x86-64 one, others are different but don’t be afraid since it is simple to get and install them. The required libraries are:
-    • glfw
-    • glm
-    • glew
-    • stb 
-    • bullet
+    * `glfw`
+    * `glm`
+    * `glew`
+    * `stb` 
+    * `bullet`
 Please refer to the *Brian’s* book for the library installation. My suggestion is to have a sub‑folder (which I call `external`) of my main folder in which to place all the required libraries. This can made easier the finding of the headers and lib files.
 
 Regarding the `glfw` library you can download the Linux sources from:
@@ -90,29 +90,41 @@ If you don’t have bullet installed on your system please install it with this 
 `sudo apt install libbullet-dev`
 
 Now that you have all the needed libraries and support files on your computer you can start enjoying your new IDE.
-If you look at the folder of your first program (the one we have made to check the Qt installation) you will find a file with the extension .pro. It acts like a Makefile indicating qtcreator which tools, include folder, library folder and library files to use for building your application. All the magics stay there.
-The simplest way to proceed is to start with a skeleton of a .pro you may copy and personalize
-Here is such a skeleton (copy and paste in a file with the .pro extension):
-# This is just a comment ! (All character following the # are comments)
+
+
+If you look at the folder of your first program (the one we have made to check the *Qt* installation)
+you will find a file with the extension `.pro`.
+
+It acts like a *Makefile* indicating *Qt Creator* which *tools*, *\#include folder*, *library folder* and *library files*
+to use for building your application.
+
+All the magics stay there.
+
+The simplest way to proceed is to start with a skeleton of a `.pro` you may copy and personalize.
+
+Here is such a skeleton (*copy* and *paste* in a file with the `.pro` extension):
+
+
+`\# This is just a comment ! (All character following the \# are comments)
 TEMPLATE = app
 CONFIG += console c++14
 CONFIG -= app_bundle
 CONFIG -= qt
-# Here we define the paths the compiler look for the include files
-# You have to change the paths accordingly to your system configuration !
+\# Here we define the paths the compiler look for the include files
+\# You have to change the paths accordingly to your system configuration !
 INCLUDEPATH += ./Headers
 INCLUDEPATH += ../external/glfw-3.1.2/include/
 INCLUDEPATH += ../external/glm-0.9.9.3/
 INCLUDEPATH += ../external/glew-1.13.0/include
 INCLUDEPATH += ../external/stb/
 INCLUDEPATH += /usr/include/bullet
-# Here are specified the paths the linker look for the library files.
-# You have to change the paths accordingly to your system configuration !
+\# Here are specified the paths the linker look for the library files.
+\# You have to change the paths accordingly to your system configuration !
 LIBS += -L/usr/lib
 LIBS += -L../build/external
 LIBS += -L../build/external/glfw-3.1.2/src
-# Here are listed the required libraries (as usual the lib prefix is omitted)
-# As an example the first row point to the libglfw3.a
+\# Here are listed the required libraries (as usual the lib prefix is omitted)
+\# As an example the first row point to the libglfw3.a
 LIBS += -lglfw3            # libglfw3.a
 LIBS += -lX11              # libX11.so
 LIBS += -lGLEW_1130        # libGLEW_1130.a
@@ -125,18 +137,23 @@ LIBS += -lXinerama         # libXinerama.so
 LIBS += -lXcursor          # libXcursor.so
 LIBS += -lXi               # libXi.so
 LIBS += -lLinearMath       # libLinearMath.so
-# For The Bullet Library
+\# For The Bullet Library
 LIBS += -lBulletDynamics   # libBulletDynamics.so
 LIBS += -lBulletCollision  # libBulletCollision.so
 LIBS += -lLinearMath       # libLinearMath.so
-# Here will be listed the source files of your application
+\# Here will be listed the source files of your application
 SOURCES += myGame.cpp
     
-# Here will be listed the header files of your application
+\# Here will be listed the header files of your application
 HEADERS += 
 
-# Here will be listed the resource files of your application
+\# Here will be listed the resource files of your application
 RESOURCES +=
-# Here will be listed the other files your application requires
-DISTFILES += 
-Make a new folder and copy the .pro file (that you have renamed as you prefer) in that folder. Let’s pretend to have named it myGame.pro,  open this file from the File menu of qtcreator: you will have a new empty project to which you can add all the files you need.
+\# Here will be listed the other files your application requires
+DISTFILES +=`
+
+Make a new folder and copy the `.pro` file (that you have renamed as you prefer) in that folder.
+
+Let’s pretend to have named it `myGame.pro`, open this file from the *File* menu of *Qt Creator*: you will have a new empty project to which you can add all the files you need.
+
+
