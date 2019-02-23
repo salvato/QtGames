@@ -1,6 +1,6 @@
 # How to Use Qt Creator for C/C++ Game Programming
 
-These instructions are for help people running the programs described in the book 
+These instructions are to help people running the programs described in the book 
 ***"The Fundamentals of C/C++ Game Programming: Using Target-based Development on SBC’s"*** from ***Brian Beuken*** 
 (http://www.scratchpadgames.net/) on *x86_64 Linux* (I use ***Ubuntu*** but on other distribution should work too)
 using *Qt Creator* as the *IDE*. 
