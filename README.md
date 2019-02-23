@@ -39,7 +39,7 @@ In the menu bar, select *Tools→Options...* A Dialog will appear allowing to se
 
  ![Kits Dialog 01](images/Fig_001.jpg)
 
-In the image above you will see some kits already installed but chances are that no kit is defined in your fresh installation. If this is the case, click *Add* to add one.
+In the above image you will see some already installed kits but chances are that no kit is defined in your fresh installation. If this is the case, click *Add* to add one.
 
 Way too many options can be set but to avoid an annoying long discussion is better to look at the following image and try to reproduce the values shown:
 
