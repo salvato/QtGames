@@ -68,11 +68,12 @@ Now that we are sure that our *Qt Creator* is able to find all the tools needed 
 **The libraries**
 
 We will need some libraries to easy our work. Some libraries are the same suggested in the book as there are versions for both the Arm architecture and the x86-64 one, others are different but don’t be afraid since it is simple to get and install them. The required libraries are:
-    * `glfw`
-    * `glm`
-    * `glew`
-    * `stb` 
-    * `bullet`
+- `glfw`
+- `glm`
+- `glew`
+- `stb` 
+- `bullet`
+
 Please refer to the *Brian’s* book for the library installation. My suggestion is to have a sub‑folder (which I call `external`) of my main folder in which to place all the required libraries. This can made easier the finding of the headers and lib files.
 
 Regarding the `glfw` library you can download the Linux sources from:
