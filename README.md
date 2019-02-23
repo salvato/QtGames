@@ -105,7 +105,8 @@ The simplest way to proceed is to start with a skeleton of a `.pro` you may copy
 Here is such a skeleton (*copy* and *paste* in a file with the `.pro` extension):
 
 
-`\# This is just a comment ! (All character following the \# are comments)
+```
+\# This is just a comment ! (All character following the \# are comments)
 TEMPLATE = app
 CONFIG += console c++14
 CONFIG -= app_bundle
@@ -123,6 +124,7 @@ INCLUDEPATH += /usr/include/bullet
 LIBS += -L/usr/lib
 LIBS += -L../build/external
 LIBS += -L../build/external/glfw-3.1.2/src
+
 \# Here are listed the required libraries (as usual the lib prefix is omitted)
 \# As an example the first row point to the libglfw3.a
 LIBS += -lglfw3            # libglfw3.a
@@ -137,23 +139,28 @@ LIBS += -lXinerama         # libXinerama.so
 LIBS += -lXcursor          # libXcursor.so
 LIBS += -lXi               # libXi.so
 LIBS += -lLinearMath       # libLinearMath.so
+
 \# For The Bullet Library
 LIBS += -lBulletDynamics   # libBulletDynamics.so
 LIBS += -lBulletCollision  # libBulletCollision.so
 LIBS += -lLinearMath       # libLinearMath.so
+
 \# Here will be listed the source files of your application
 SOURCES += myGame.cpp
-    
+
 \# Here will be listed the header files of your application
 HEADERS += 
 
 \# Here will be listed the resource files of your application
 RESOURCES +=
+
 \# Here will be listed the other files your application requires
-DISTFILES +=`
+DISTFILES +=
+```
 
 Make a new folder and copy the `.pro` file (that you have renamed as you prefer) in that folder.
 
-Let’s pretend to have named it `myGame.pro`, open this file from the *File* menu of *Qt Creator*: you will have a new empty project to which you can add all the files you need.
+Let’s pretend to have named it `myGame.pro`, open this file from the *File* menu of *Qt Creator*: you will have a new empty 
+project to which you can add all the files you need.
 
 
