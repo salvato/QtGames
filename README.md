@@ -1,7 +1,13 @@
-# How to Use Qt Creator for C/C++ Game Programming (Work in progress NOT YET READY !)
+# How to Use Qt Creator for C/C++ Game Programming
 
-These instructions are for *x86_64 Linux* (I use **Ubuntu** but on other distribution should work too).
-If anyone is interested I can later details how to use *Qt Creator* also on the **Raspberry Pi**.
+These instructions are for help people running the programs described in the book 
+***"The Fundamentals of C/C++ Game Programming: Using Target-based Development on SBC’s"*** from ***Brian Beuken*** 
+(http://www.scratchpadgames.net/) on *x86_64 Linux* (I use ***Ubuntu*** but on other distribution should work too)
+using *Qt Creator* as the *IDE*. 
+
+***Disclaimer (Please Brian, tell me what to write here !!)***
+
+If anyone is interested I can later details how to use *Qt Creator* also on the ***Raspberry Pi***.
 
 As usual, we have to fight a little with the first setup phase but after that we will have a very
 friendly development environment that can offer many useful supports to the programmer.
