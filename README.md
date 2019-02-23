@@ -37,33 +37,40 @@ In the image above you will see some kits already installed but chances are that
 
 Way too many options can be set but to avoid an annoying long discussion is better to look at the following image and try to reproduce the values shown:
 
-**insert image**
+![Kits Dialog 02](images/Fig_002.jpg)
 
 When everything is OK press *Apply* and you are ready to start your first project.
 
 In the Menu bar click on *File → New File or Project* then in the appearing dialog choose *Non-Qt Project* and *Plain C++ Application*
 
+![Fig 03](images/Fig_003.jpg)
+
 Click on *Choose* and a new dialog will appear that allows to assign a name and a path for our new application.
 
-**insert image**
+![Fig 04](images/Fig_004.jpg)
 
 Click *Next* and leave *qmake* as the *Build system* as shown in the next dialog:
 
-**insert image**
+![Fig 05](images/Fig_005.jpg)
 
 Another dialog will appear allowing to choose the *Kit* (or *Kits*) to use for building your project. Choose the one you have set in the setup phase:
 
-**insert image**
+![Fig 06](images/Fig_006.jpg)
 
 Clicking *Next* will shows the last Dialog allowing to choose a *“Source Version Control System”* to use (I’ll not go into this but I warmly suggest you to use one as suggested in the *Brian’s* book).
 
+![Fig 07](images/Fig_007.jpg)
+
 Now you will enter the developing environment with a skeleton of your first application.
 
-Just to be sure of having the system up and running click on the ![Dash button](images/DashButton.jpg) button and run the program.
+![Fig 08](images/Fig_008.jpg)
+
+Just to be sure of having the system up and running click on the ![Fig 09](images/Fig_009.jpg)
+ button and run the program.
 
 A terminal will open and your first *Hello World* should appear:
 
-**insert image**
+![Fig 10](images/Fig_010.jpg)
 
 Now that we are sure that our *Qt Creator* is able to find all the tools needed to compile, link and run our program we may proceed to set up the environment needed for our game development.
 
