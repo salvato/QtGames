@@ -18,7 +18,7 @@ From the *Qt* site (http://www.qt.io/download) download an up to date version of
 
 You can choose between a free, open source version or a commercial one (in case you plan to distribute your work). I’ll go with the *Open Source* one (I’m only learning!).
 
-You will download a file whose name will resemble *“qt-unified-linux-x64-3.0.6-online.run”*. Open a terminal on the containing directory and made it executable by issuing the following command:
+You will download a file whose name will resemble *“qt-unified-linux-x64-3.0.6-online.run”*. Open a terminal on the containing directory and make it executable by issuing the following command:
 
 `chmod +x qt-unified-linux-x64-3.0.6-online.run`
 
