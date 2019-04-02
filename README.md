@@ -5,14 +5,19 @@ These instructions are to help people running the programs described in the book
 (http://www.scratchpadgames.net/) on *x86_64 Linux* (I use ***Ubuntu*** but on other distribution should work too)
 using *Qt Creator* as the *IDE*. 
 
-***Disclaimer (Please Brian, tell me what to write here !!)***
-
 If anyone is interested I can later detail how to use *Qt Creator* also on the ***Raspberry Pi***.
 
 As usual, we have to fight a little with the first setup phase but after that we will have a very
 friendly development environment that can offer many useful supports to the programmer.
 
 **Let’s start !**
+
+First of all ensure that your Ubuntu distribution is updated and contains the right tools for compiling C and C++ programs:
+
+`sudo apt update && sudo apt upgrade -y`
+
+`sudo apt install build-essential`
+
 
 From the *Qt* site (http://www.qt.io/download) download an up to date version of *Qt* (version 5.12 at the date I’m writing).
 
